@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Order Manager</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#4f46e5" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* เพิ่มสไตล์สำหรับ modal ที่ซ่อนอยู่ */
+      .modal-hidden {
+        display: none;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <div id="modal-container"></div>
+    <script type="module" src="index.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

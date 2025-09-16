@@ -1,0 +1,21 @@
+{
+  "name": "OM 7.4 beta แปลง static ",
+  "short_name": "Order Manager",
+  "description": "แก้ไขบิล ย้อนข้อมูล พิมพ์ เริ่มแก้ไขข้อมูล",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
